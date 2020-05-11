@@ -1,5 +1,5 @@
 const paystack = (request) => {
-    const MySecretKey = 'http://localhost:3000/paystack/callback';
+    const MySecretKey = 'sk_test_cab4fa7433751ee30a029d763d8c8b560c022a5c';
     //replace the secret key with that from your paystack account
     const initializePayment = (form, mycallback) => {
         const options = {
