@@ -1,0 +1,29 @@
+extends layout
+block content
+    main
+        .row.justify-content-center
+            .col-lg-6.container3.text-white.p-5
+                .container4
+                    h3.text-center
+                        | Load
+                        span.spn
+                        | Your Wallet
+                .container.pt-3
+                    form(name='myForm', action='/paystack/pay', method='POST')
+                        input#name(type='text', name='full_name', placeholder='Full Name')
+                        hr
+                        input#email(type='email', name='email', placeholder='Email')
+                        hr
+                        select(name='amount')
+                            option Select Amount
+                            option(value='500') 500
+                            option(value='500') 600
+                            option(value='500') 700
+                            option(value='500') 800
+                            option(value='500') 900
+                            option(value='500') 1000
+                            option(value='500') 1500
+                            option(value='1000') 2000
+                            option(value='2000') 2500
+                        .bttn.pt-2
+                            button(type='submit') Load
